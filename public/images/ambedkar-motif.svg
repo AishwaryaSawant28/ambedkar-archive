@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Archival motif honouring Dr. B. R. Ambedkar: a constitutional document beneath a twenty-four-spoked wheel">
+  <defs>
+    <linearGradient id="parchment" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe7d6"/>
+      <stop offset="1" stop-color="#e5d9c1"/>
+    </linearGradient>
+    <linearGradient id="sheet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdfbf6"/>
+      <stop offset="1" stop-color="#f6efe0"/>
+    </linearGradient>
+    <linearGradient id="navyfade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141e2f" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#141e2f" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#parchment)"/>
+
+  <!-- faint ruled archival-paper lines -->
+  <g stroke="#d3c5a8" stroke-width="1" opacity="0.55">
+    <path d="M40 408 H600"/><path d="M40 424 H600"/><path d="M40 440 H520"/>
+  </g>
+
+  <!-- twenty-four-spoked wheel (line art, state emblem of India motif) -->
+  <g transform="translate(320 190)">
+    <circle r="128" fill="none" stroke="#1d2b40" stroke-opacity="0.22" stroke-width="3"/>
+    <circle r="112" fill="none" stroke="#1d2b40" stroke-opacity="0.16" stroke-width="1.5"/>
+    <circle r="14" fill="#1d2b40" fill-opacity="0.25"/>
+    <g stroke="#1d2b40" stroke-opacity="0.22" stroke-width="2.5">
+      <path d="M0 -128 V-14"/><path d="M0 14 V128"/>
+      <path d="M-128 0 H-14"/><path d="M14 0 H128"/>
+      <path d="M-90.5 -90.5 L-9.9 -9.9"/><path d="M9.9 9.9 L90.5 90.5"/>
+      <path d="M-90.5 90.5 L-9.9 9.9"/><path d="M9.9 -9.9 L90.5 -90.5"/>
+      <path d="M-64 -110.85 L-7 -12.15"/><path d="M7 12.15 L64 110.85"/>
+      <path d="M-110.85 -64 L-12.15 -7"/><path d="M12.15 7 L110.85 64"/>
+      <path d="M-110.85 64 L-12.15 7"/><path d="M12.15 -7 L110.85 -64"/>
+      <path d="M-64 110.85 L-7 12.15"/><path d="M7 -12.15 L64 -110.85"/>
+    </g>
+  </g>
+
+  <!-- constitutional document -->
+  <g transform="translate(150 250)">
+    <rect x="14" y="16" width="340" height="180" rx="6" fill="#1d2b40" opacity="0.14"/>
+    <rect width="340" height="180" rx="6" fill="url(#sheet)" stroke="#d3c5a8" stroke-width="2"/>
+    <rect x="0" y="0" width="340" height="34" rx="6" fill="url(#navyfade)"/>
+    <g stroke="#1d2b40" stroke-linecap="round" opacity="0.6">
+      <path d="M22 52 H262" stroke-width="3" stroke="#b9661c" opacity="0.9"/>
+      <path d="M22 72 H318" stroke-width="2"/>
+      <path d="M22 86 H318" stroke-width="2" opacity="0.85"/>
+      <path d="M22 100 H296" stroke-width="2" opacity="0.7"/>
+      <path d="M22 118 H318" stroke-width="2" opacity="0.85"/>
+      <path d="M22 132 H304" stroke-width="2" opacity="0.7"/>
+      <path d="M22 146 H318" stroke-width="2" opacity="0.55"/>
+      <path d="M22 160 H240" stroke-width="2" opacity="0.4"/>
+    </g>
+    <circle cx="304" cy="46" r="13" fill="none" stroke="#b9661c" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- memorial dates -->
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="320" y="452" font-size="19" letter-spacing="6" fill="#1d2b40" opacity="0.85">1891 — 1956</text>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  /* Museum / heritage palette */
+  --color-ivory: #faf6ee;
+  --color-ivory-dark: #f1eadb;
+  --color-parchment: #efe7d6;
+  --color-parchment-dark: #e5d9c1;
+  --color-ink: #16161e;
+  --color-navy: #1d2b40;
+  --color-navy-deep: #141e2f;
+  --color-navy-soft: #35465e;
+  --color-slate-muted: #5d6b7e;
+  --color-saffron: #d9822b;
+  --color-saffron-dark: #b9661c;
+  --color-saffron-soft: #f3dcc0;
+  --color-terracotta: #b35a44;
+  --color-olive: #6e7045;
+  --color-moss: #57624a;
+  --color-border-warm: #e3d8c2;
+  --color-border-strong: #d3c5a8;
+  --color-gold: #c9a227;
+  --color-paper: #fdfbf6;
+
+  --font-serif: "Fraunces", "Georgia", "Times New Roman", serif;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+
+  --shadow-card: 0 1px 2px rgba(22, 30, 47, 0.05), 0 6px 20px -6px rgba(22, 30, 47, 0.12);
+  --shadow-lift: 0 2px 4px rgba(22, 30, 47, 0.06), 0 14px 34px -10px rgba(22, 30, 47, 0.2);
+  --shadow-panel: 0 20px 50px -12px rgba(20, 30, 47, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle archival paper grain on parchment/hero surfaces (procedural,
+   no image request, low-contrast so text stays readable). */
+.paper-grain {
+  background-image:
+    radial-gradient(rgba(29, 43, 64, 0.045) 1px, transparent 1px),
+    radial-gradient(rgba(29, 43, 64, 0.035) 1px, transparent 1px);
+  background-size: 22px 22px, 34px 34px;
+  background-position: 0 0, 11px 17px;
+}
+
+::selection {
+  background: var(--color-saffron-soft);
+  color: var(--color-navy-deep);
+}
+
+/* Subtle, restrained scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ivory-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 8px;
+  border: 2px solid var(--color-ivory-dark);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-muted);
+}
+
+/* Visible focus ring for keyboard and kiosk navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-saffron);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
